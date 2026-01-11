@@ -1,5 +1,6 @@
 package com.example.nofaramalka6;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
     public void clickme(View view) {
         Button btn = findViewById(R.id.btn);
         counter++;
-      btn.setText("This is a click number:" + counter);
+        btn.setBackgroundColor(Color.MAGENTA);
+        if(counter == 6) {
+           btn.setText("Enough to click. Go to new start!");
+           counter = 0;
+         } else {
+           btn.setText("This is click number:" + counter);
+
+       }
     }
 }

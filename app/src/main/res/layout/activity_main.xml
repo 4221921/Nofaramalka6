@@ -8,11 +8,12 @@
     tools:context=".MainActivity">
 
     <Button
-        android:onClick="clickme"
         android:id="@+id/btn"
         android:layout_width="257dp"
         android:layout_height="136dp"
+        android:onClick="clickme"
         android:text="Click me"
+        android:textColorLink="#ED8CEB"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
