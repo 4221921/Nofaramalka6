@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
 
     @Override
+    int counter = 0;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickme(View view) {
         Button btn = findViewById(R.id.btn);
-        btn.setText("Oh, yea, i've been clicked");
+        counter++;
+      btn.setText("This is a click number:" + counter);
     }
 }
