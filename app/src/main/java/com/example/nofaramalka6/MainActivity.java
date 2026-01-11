@@ -29,12 +29,13 @@ public class MainActivity extends AppCompatActivity {
     public void clickme(View view) {
         Button btn = findViewById(R.id.btn);
         counter++;
-        btn.setBackgroundColor(Color.MAGENTA);
-        if(counter == 6) {
-           btn.setText("Enough to click. Go to new start!");
+        if(counter == 7) {
+           btn.setText("BOOM!");
+           btn.setBackgroundColor(Color.MAGENTA);
            counter = 0;
          } else {
            btn.setText("This is click number:" + counter);
+           btn.setBackgroundColor(Color.parseColor("#6200EE"));
 
        }
     }
