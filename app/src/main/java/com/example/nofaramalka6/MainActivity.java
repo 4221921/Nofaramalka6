@@ -1,6 +1,8 @@
 package com.example.nofaramalka6;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,10 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void clickme(View view) {
+        Button btn = findViewById(R.id.btn);
+        btn.setText("Oh, yea, i've been clicked");
     }
 }
